@@ -9,6 +9,8 @@ WORKDIR /usr/src/app
 # Bundle app source
 COPY . .
 
+RUN npm i
+
 ENTRYPOINT ["/usr/local/bin/dumb-init", "--"]
 
 CMD node index.js
