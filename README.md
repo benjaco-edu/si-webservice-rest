@@ -15,7 +15,7 @@ The soap-service make use of a mysqldatabase for data storage, start it inside a
 ```
 sudo docker run -d --name mysql01 -p 3306:3306 -e MYSQL_ROOT_PASSWORD=test1234 mysql
 ```
-Next build the docker container for the soap service
+Next build the docker container for the soap service, navigate to the soap folder and execute
 ```
 sudo docker build -t soapserver .
 ```
