@@ -21,7 +21,7 @@ sudo docker build -t soapserver .
 ```
 Now Run the container
 ```
-sudo docker run -it --rm --link mysql01 -p 9090:80 minserver Newdb
+sudo docker run -it --rm --link mysql01 -p 9090:80 soapserver Newdb
 ```
 Notice the 'Newdb' at the very end, this command tells the server to create a new database and auto-populate it, the run-command will also work without 'Newdb', in that case its up to you to insert data.
 ### Is it running?
