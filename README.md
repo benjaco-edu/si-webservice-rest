@@ -24,5 +24,21 @@ Now Run the container
 sudo docker run -it --rm --link mysql01 -p 9090:80 minserver Newdb
 ```
 Notice the 'Newdb' at the very end, this command tells the server to create a new database and auto-populate it, the run-command will also work without 'Newdb', in that case its up to you to insert data.
+### Is it running?
+Open a browser and navigate to 
+```
+http://localhost:9090/service.asmx?wsdl
+```
+If it's running correctly you will a WSDL document.
 
 ## Rest service
+
+run the container by
+```
+docker run -p 8080:8080 bslcphbussiness/si-mp-ws
+```
+you can bind "sqllite" file down to the container to persist the data
+
+the path in the container is /usr/src/app/sqllite
+
+see the documentation in postman by loading in the si.postman_collection.json file# si-webservice-rest
