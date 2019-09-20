@@ -15,13 +15,9 @@ The soap-service make use of a mysqldatabase for data storage, start it inside a
 ```
 sudo docker run -d --name mysql01 -p 3306:3306 -e MYSQL_ROOT_PASSWORD=test1234 mysql
 ```
-Next build the docker container for the soap service, navigate to the soap folder and execute
+Now Run the container with the soap service
 ```
-sudo docker build -t soapserver .
-```
-Now Run the container
-```
-sudo docker run -it --rm --link mysql01 -p 9090:80 soapserver Newdb
+sudo docker run -it --rm --link mysql01 -p 9090:80 cphjs284/siminiws:1.0 Newdb
 ```
 Notice the 'Newdb' at the very end, this command tells the server to create a new database and auto-populate it, the run-command will also work without 'Newdb', in that case its up to you to insert data.
 ### Is it running?
