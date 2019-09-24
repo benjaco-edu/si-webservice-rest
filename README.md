@@ -4,9 +4,9 @@
 # What is it
 <br>
 This is a repo containing 3 projects.<br>
-A server offering a REST endpoint (located in the rest folder),<br>
-A server offering a SOAP endpoint (located in the soap folder),<br>
-A client for contacting both of the endpoints and retreiving data from them<br>
+A server offering a REST endpoint, located in the rest folder (tech: NodeJs),<br>
+A server offering a SOAP endpoint, located in the soap folder (tech C#)<br>
+A client for contacting both of the endpoints and retreiving data from them, located in the client folder (tech Python3)<br>
 
 # Up and running
 
