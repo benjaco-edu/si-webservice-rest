@@ -41,3 +41,30 @@ you can bind "sqllite" file down to the container to persist the data
 the path in the container is /usr/src/app/sqllite
 
 see the documentation in postman by loading in the si.postman_collection.json file# si-webservice-rest
+<br>
+## Client
+Requirement: Python3 must be installed on your machine<br>
+<br>
+Navigate to the client folder and execute
+```
+python WebserviceClient.py"
+```
+<b>Small client manual</b><br>
+You will be presented with the following options:
+
+You will have to select:
+- 1 for SOAP (teachers)
+- 2 fo REST (students)
+
+The following procedure is self-explanatory
+
+Both choices will give you 5 options to choose:
+- 1 Get all list of (SOAP) teachers or (REST) students 
+- 2 Get a given teacher/student by typing ID
+- 3 Add a new teacher/student to the list
+- 4 Update a teacher/student in the list 
+- 5 Delete a teacher/student from the list
+
+* if you are forced back to "main terminal" you have to (once again) start by selecting 1 for SOAP or 2 for REST, 
+otherwise the program will give an error. 
+
