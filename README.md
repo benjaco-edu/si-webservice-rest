@@ -43,11 +43,11 @@ the path in the container is /usr/src/app/sqllite
 see the documentation in postman by loading in the si.postman_collection.json file# si-webservice-rest
 <br>
 ## Client
-Requirement: Python3 must be installed on your machine<br>
+Requirement: Python3 and zeep must be installed on your machine<br>
 <br>
 Navigate to the client folder and execute
 ```
-python WebserviceClient.py"
+python WebserviceClient.py
 ```
 <b>Small client manual</b><br>
 You will be presented with the following options:
