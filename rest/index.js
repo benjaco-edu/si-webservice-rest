@@ -49,6 +49,9 @@ app.use(bodyParser.json());
     });
     
     app.put('/students/:id', async (req, res) => {
+        let data = await db.query`select * from students where id = ${req.params.id}`
+        if(data.length === 0)
+            return res.status(404).end();
         await db.query`update students set name = ${req.body.name}, age = ${req.body.age} where id = ${req.params.id}`;
         res.status(202).end();
     });
