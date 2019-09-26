@@ -13,8 +13,6 @@ app.use(bodyParser.json());
     const db = new Sqllite("sqllite"); // memory is the default in my
 
     try {
-        
-        
         await db.createDatabase("database.sqllite");
 
         await db.query`
@@ -28,9 +26,11 @@ app.use(bodyParser.json());
         await db.query`insert into students (name, age) values ("bo", 22)`;
         await db.query`insert into students (name, age) values ("andreas", 28)`;
         await db.query`insert into students (name, age) values ("hans", 21)`;
-    } catch (error) {
-            
-    }
+    } catch (error) {}
+    
+    
+    
+    
 
     app.get('/students', async (req, res) => {
         res.json(await db.query`select * from students`)
