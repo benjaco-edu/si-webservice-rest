@@ -37,7 +37,6 @@ app.use(bodyParser.json());
     });
     
     app.post('/students', async (req, res) => {
-        console.log(req.body)
         await db.query`insert into students (name, age) values (${req.body.name}, ${req.body.age})`;
         res.status(201).end();
     });
