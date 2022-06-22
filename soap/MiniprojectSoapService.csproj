@@ -9,7 +9,7 @@
     <PackageReference Include="Microsoft.AspNetCore.App" />
     <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.2.0" PrivateAssets="All" />
     <PackageReference Include="mysql.data" Version="8.0.17" />
-    <PackageReference Include="newtonsoft.json" Version="12.0.2" />
+    <PackageReference Include="newtonsoft.json" Version="13.0.1" />
     <PackageReference Include="soapcore" Version="0.9.9.6" />
   </ItemGroup>
 
